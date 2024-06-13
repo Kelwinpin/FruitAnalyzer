@@ -29,7 +29,7 @@ def load_and_preprocess_images(data_dir, img_size=(128, 128)):
     
     return images, labels, class_names
 
-data_dir = 'archive/fruits-360_dataset/fruits-360/Training'  # Especifique o caminho para o conjunto de dados
+data_dir = 'archive/fruits-360_dataset/fruits-360/Training'
 images, labels, class_names = load_and_preprocess_images(data_dir)
 
 X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
